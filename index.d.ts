@@ -112,6 +112,12 @@ declare class Sound {
    * @param value - ranging from 0.0 (silence) through 1.0 (full volume)
    */
   setVolume(value: number): void
+  
+   /**
+   * Return the system volume of the audio player,
+   * Ranges from 0.0 (silence) through 1.0 (full volume, the default)
+   */
+  getSystemVolume(): number
 
   /**
    * Return the stereo pan position of the audio player (not the system-wide pan)
